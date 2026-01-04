@@ -115,7 +115,7 @@ class CSVExcelViewer:
             values = [start_num + i] + list(row)
             self.tree.insert("", "end", values=values, tags=(tag,))
 
-    # --- Навігація ---
+   
     def next_chunk(self):
         if self.filetype == "csv" and self.reader:
             self.page += 1
